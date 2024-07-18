@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import "./MusicPlayer.css";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import config from "./config/config";
 import { Modal, Button, message } from "antd";
@@ -9,11 +8,6 @@ import { Modal, Button, message } from "antd";
 const MusicPlayer = () => {
   const [currentTrack, setCurrentTrack] = useState("");
   const [tracks, setTracks] = useState([]);
-  const navigate = useNavigate();
-
-  const handleUpload = () => {
-    navigate("/upload");
-  };
 
   const fetchMusic = async () => {
     try {
@@ -62,9 +56,6 @@ const MusicPlayer = () => {
     <div className="music-player-container">
       <div className="music-player-header">
         <h1>Music Player</h1>
-        <button onClick={handleUpload} className="upload-button">
-          Upload
-        </button>
       </div>
 
       <div className="track-list">

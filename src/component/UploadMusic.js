@@ -15,7 +15,7 @@ function UploadMusic() {
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
-    if (!file || !name) {
+    if (!file || !name || !author) {
       message.warning("Vui lòng nhập đầy đủ thông tin");
     } else {
       setUploading(true);
@@ -45,9 +45,6 @@ function UploadMusic() {
 
   return (
     <div className="upload-music-container">
-      <Link to="/">
-        <div>Home</div>
-      </Link>
       <h2>Upload Music</h2>
       <div className="upload-music-form">
         <div className="form-group">
