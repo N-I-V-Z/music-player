@@ -23,7 +23,11 @@
 - Thiết lập `API` endpoint cho ứng dụng của bạn.
 
 4. **Khởi động ứng dụng**
-
+- **Server**: 
+```bash
+    npm run be
+```
+- **Client**:
 ```bash
     npm start
 ```
