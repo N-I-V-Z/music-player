@@ -1,0 +1,16 @@
+POST http://localhost:5000/api/v1/music/addMusic
+Content-Type: application/json
+
+{
+    "name": "abcd",
+    "src": "abc"
+}
+###
+GET http://localhost:5000/api/v1/music/getAll
+###
+DELETE http://localhost:5000/api/v1/music/deleteMusic
+Content-Type: application/json
+
+{
+    "id": 1
+}

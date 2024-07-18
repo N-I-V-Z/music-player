@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Hướng dẫn sử dụng Music Player App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là ứng dụng Music Player cho phép bạn nghe nhạc và quản lý các bài hát của mình.
 
-## Available Scripts
+## Cài đặt và Chạy ứng dụng
 
-In the project directory, you can run:
+1. **Clone repository từ GitHub**
 
-### `npm start`
+```bash
+    git clone https://github.com/N-I-V-Z/music-player.git
+    cd music-player
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Cài đặt dependencies**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+    npm install
+```
 
-### `npm test`
+3. **Cấu hình API Endpoint**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Mở file `src/component/config/config.js`
+- Thiết lập `API` endpoint cho ứng dụng của bạn.
 
-### `npm run build`
+4. **Khởi động ứng dụng**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Truy cập ứng dụng**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Mở trình duyệt và truy cập vào địa chỉ `http://localhost:3000` (hoặc địa chỉ khác nếu đã được cấu hình).
 
-### `npm run eject`
+## Chức năng của ứng dụng
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Nghe nhạc**: Click vào một bài hát trong danh sách để nghe.
+- **Tải lên bài hát mới**: Click vào nút "Upload" để tải lên bài hát mới.
+- **Xóa bài hát**: Click vào nút "X" trên mỗi bài hát để xóa khỏi danh sách.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Hướng dẫn thêm bài hát
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Click vào nút "Upload".
+2. Chọn file âm thanh từ máy tính của bạn và bấm "Upload".
+3. Bài hát mới sẽ được thêm vào danh sách và bạn có thể nghe bằng cách click vào tên của nó.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Xóa bài hát
 
-## Learn More
+1. Click vào nút "X" trên bài hát bạn muốn xóa.
+2. Xác nhận hộp thoại xóa để hoàn tất thao tác.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
