@@ -2,7 +2,7 @@ import { useState } from "react";
 import { uploadMusic } from "./utils/upFb";
 import axios from "axios";
 import { message, Progress } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./UploadMusic.css"; // Import file CSS
 
 function UploadMusic() {

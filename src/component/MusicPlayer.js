@@ -23,8 +23,7 @@ const MusicPlayer = () => {
       await axios.delete(`${config.API}/api/v1/music/deleteMusic`, {
         data: { id },
       });
-      // Xóa bài hát khỏi state sau khi xóa thành công từ server
-      setTracks(tracks.filter((track) => track.id !== id));
+      fetchMusic();      
       message.success("Delete successfully");
     } catch (error) {
       console.error("Error deleting music:", error);
@@ -40,10 +39,10 @@ const MusicPlayer = () => {
       cancelText: "No",
       onOk() {
         handleDelete(id);
+        fetchMusic();
         if (src === currentTrack) {
           setCurrentTrack("");
         }
-        fetchMusic();
       },
     });
   };
