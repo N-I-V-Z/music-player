@@ -13,22 +13,35 @@
 
 2. **Cài đặt dependencies**
 
-```bash
+- Cài đặt các gói cho Front-end
+
+    ```bash
+    cd client
     npm install
-```
+    ```
+- Cài đặt các gói cho Back-end
+
+    ```bash
+    cd server
+    npm install
+    ```
 
 3. **Cấu hình API Endpoint**
 
-- Mở file `src/component/config/config.js`
+- Mở file `client/src/component/config/config.js`
 - Thiết lập `API` endpoint cho ứng dụng của bạn.
 
 4. **Khởi động ứng dụng**
-- **Server**: 
+- **Server**:
+
 ```bash
-    npm run be
+    cd server
+    npm start
 ```
+
 - **Client**:
 ```bash
+    cd client
     npm start
 ```
 
